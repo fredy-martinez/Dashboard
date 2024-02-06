@@ -75,12 +75,20 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'view-transition',
-        title: 'View Transition',
+        path: 'view-transition-1',
+        title: 'View Transition 1',
         loadComponent: () =>
           import(
-            './dashboard/pages/view-transition/view-transition.component'
+            './dashboard/pages/view-transition/view-transition1.component'
           ).then((c) => c.ViewTransitionComponent),
+      },
+      {
+        path: 'view-transition-2',
+        title: 'View Transition 2',
+        loadComponent: () =>
+          import(
+            './dashboard/pages/view-transition/view-transition2.component'
+          ).then((c) => c.ViewTransitionComponent2),
       },
     ],
   },
